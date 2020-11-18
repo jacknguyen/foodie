@@ -6,6 +6,17 @@ class Business
   end
 
   class << self
+    # https://github.com/erikgrueter1/yelp-fusion
+    # Examples from docs
+    # coordinates = { latitude: 37.7577, longitude: -122.4376 }
+    # params = {
+    #   term: 'food',
+    #   limit: 3,
+    #   category_filter: 'discgolf'
+    # }
+    # client.search('San Francisco', params)
+    # client.search('San Francisco', term: 'restaurants')
+    # client.search('90094')
     def client
       Yelp::Fusion.client
     end
@@ -13,6 +24,7 @@ class Business
     def limit
       20
     end
+
     # Searches for restaurants base on address or zipcode. Default search is set
     # to restaurants or else you'd get other non food places.
     #
@@ -21,7 +33,6 @@ class Business
     # ==== Examples
     #   Business.search(zip_code: 90210)
     #   Business.search(zip_code: 90210, page: 2)
-
     def search(opts = {})
       params = {
         categories: 'restaurants',
@@ -31,16 +42,6 @@ class Business
       raise InvalidArguments unless location
 
       params.merge!(offset(opts[:page]))
-      # Yelp::Fusion
-      # coordinates = { latitude: 37.7577, longitude: -122.4376 }
-      # params = {
-      #   term: 'food',
-      #   limit: 3,
-      #   category_filter: 'discgolf'
-      # }
-      # client.search('San Francisco', params)
-      # client.search('San Francisco', term: 'restaurants')
-      # client.search('90094')
       restaurants = client.search(location, params)
     rescue Yelp::Fusion::Error::ValidationError
       []
