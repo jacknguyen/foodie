@@ -1,0 +1,273 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.yelp.com/v3/businesses/search?limit=20&location=90094&term=restaurants
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Authorization:
+      - Bearer KLoofZniw4yabSzI5pn38yhcvR6G0-arFYkeGVjUBT-XieLiV6O42I11MDgRz8aZcSky0IlmsGlEKYtp58bX0Ey-ev-14SkaCD8Gz0bWHYNHD9OQRRk2UbehHZWxX3Yx
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Server:
+      - openresty/1.13.6.2
+      Content-Type:
+      - application/json
+      X-Routing-Service:
+      - routing-main--uswest2-779d555cf4-4qnp2; site=public_api_v3
+      Ratelimit-Remaining:
+      - '4958'
+      X-B3-Sampled:
+      - '0'
+      Ratelimit-Dailylimit:
+      - '5000'
+      X-Zipkin-Id:
+      - 4b88d0bec0be4f0d
+      Ratelimit-Resettime:
+      - '2020-11-19T00:00:00+00:00'
+      X-Proxied:
+      - 10-69-70-199-uswest2aprod
+      X-Extlb:
+      - 10-69-70-199-uswest2aprod
+      Cache-Control:
+      - max-age=0, must-revalidate, no-cache, no-store, private, no-transform
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Wed, 18 Nov 2020 03:51:48 GMT
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-bur17583-BUR
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: '{"businesses": [{"id": "048v5GZpsMP_1MEofObfSg", "alias": "bull-and-butterfly-los-angeles",
+        "name": "Bull & Butterfly", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/BHqkePENyKDWVRUq2MZwig/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/bull-and-butterfly-los-angeles?adjust_creative=SSaZrUoYqTtTRfKU0Kl9DQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=SSaZrUoYqTtTRfKU0Kl9DQ",
+        "review_count": 25, "categories": [{"alias": "steak", "title": "Steakhouses"},
+        {"alias": "seafood", "title": "Seafood"}], "rating": 4.5, "coordinates": {"latitude":
+        33.976726, "longitude": -118.417029}, "transactions": [], "location": {"address1":
+        "12746 Millennium Dr", "address2": "Ste 2200", "address3": null, "city": "Los
+        Angeles", "zip_code": "90094", "country": "US", "state": "CA", "display_address":
+        ["12746 Millennium Dr", "Ste 2200", "Los Angeles, CA 90094"]}, "phone": "+12132672900",
+        "display_phone": "(213) 267-2900", "distance": 286.1843875469211}, {"id":
+        "CPrXIt-1RuNF0Lvb7KdCiA", "alias": "hopdoddy-burger-bar-playa-vista", "name":
+        "Hopdoddy Burger Bar", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/PzwIYHIyoT0nhDalUL11GA/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/hopdoddy-burger-bar-playa-vista?adjust_creative=SSaZrUoYqTtTRfKU0Kl9DQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=SSaZrUoYqTtTRfKU0Kl9DQ",
+        "review_count": 777, "categories": [{"alias": "burgers", "title": "Burgers"}],
+        "rating": 4.0, "coordinates": {"latitude": 33.976386, "longitude": -118.417766},
+        "transactions": ["delivery"], "price": "$$", "location": {"address1": "12746
+        Jefferson Blvd", "address2": "Suite 1120", "address3": "", "city": "Playa
+        Vista", "zip_code": "90094", "country": "US", "state": "CA", "display_address":
+        ["12746 Jefferson Blvd", "Suite 1120", "Playa Vista, CA 90094"]}, "phone":
+        "+13104102337", "display_phone": "(310) 410-2337", "distance": 318.6462396504546},
+        {"id": "VscSML6lgNgjJbm41Jqjog", "alias": "sol-mexican-cocina-los-angeles-3",
+        "name": "SOL Mexican Cocina", "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/VzfWhm944uJ6raV3XRoUDA/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/sol-mexican-cocina-los-angeles-3?adjust_creative=SSaZrUoYqTtTRfKU0Kl9DQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=SSaZrUoYqTtTRfKU0Kl9DQ",
+        "review_count": 1311, "categories": [{"alias": "bars", "title": "Bars"}, {"alias":
+        "mexican", "title": "Mexican"}, {"alias": "breakfast_brunch", "title": "Breakfast
+        & Brunch"}], "rating": 4.0, "coordinates": {"latitude": 33.97607616706, "longitude":
+        -118.416961589194}, "transactions": ["pickup", "delivery"], "price": "$$",
+        "location": {"address1": "12775 W Millennium Dr", "address2": "Ste 160", "address3":
+        "", "city": "Los Angeles", "zip_code": "90094", "country": "US", "state":
+        "CA", "display_address": ["12775 W Millennium Dr", "Ste 160", "Los Angeles,
+        CA 90094"]}, "phone": "+14242890066", "display_phone": "(424) 289-0066", "distance":
+        237.2443964646449}, {"id": "lC1ZQiF8QrTqAWIz_zWAOw", "alias": "dan-modern-chinese-los-angeles-2",
+        "name": "dan modern chinese", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/gloQV8gnT55Yv4uBN3Ra0A/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/dan-modern-chinese-los-angeles-2?adjust_creative=SSaZrUoYqTtTRfKU0Kl9DQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=SSaZrUoYqTtTRfKU0Kl9DQ",
+        "review_count": 9, "categories": [{"alias": "chinese", "title": "Chinese"},
+        {"alias": "noodles", "title": "Noodles"}, {"alias": "taiwanese", "title":
+        "Taiwanese"}], "rating": 4.5, "coordinates": {"latitude": 33.975903, "longitude":
+        -118.417949}, "transactions": ["pickup", "delivery"], "location": {"address1":
+        "12775 W Millennium Dr", "address2": "Ste 110", "address3": "", "city": "Los
+        Angeles", "zip_code": "90094", "country": "US", "state": "CA", "display_address":
+        ["12775 W Millennium Dr", "Ste 110", "Los Angeles, CA 90094"]}, "phone": "+14248354777",
+        "display_phone": "(424) 835-4777", "distance": 311.5879025149187}, {"id":
+        "SHF_vf1wyUa5zomj_ZJ8sQ", "alias": "casa-modena-culver-city-2", "name": "Casa
+        Modena", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/oi6SUnvRWDrlrleXQDat6g/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/casa-modena-culver-city-2?adjust_creative=SSaZrUoYqTtTRfKU0Kl9DQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=SSaZrUoYqTtTRfKU0Kl9DQ",
+        "review_count": 317, "categories": [{"alias": "italian", "title": "Italian"}],
+        "rating": 4.5, "coordinates": {"latitude": 33.98595, "longitude": -118.40133},
+        "transactions": ["pickup", "restaurant_reservation", "delivery"], "price":
+        "$$", "location": {"address1": "11800 Jefferson Blvd", "address2": "", "address3":
+        null, "city": "Culver City", "zip_code": "90230", "country": "US", "state":
+        "CA", "display_address": ["11800 Jefferson Blvd", "Culver City, CA 90230"]},
+        "phone": "+14242898003", "display_phone": "(424) 289-8003", "distance": 1732.0069978769177},
+        {"id": "87eLupoulevo1nGCzo-hFg", "alias": "conference-room-los-angeles", "name":
+        "Conference Room", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/lYpNjC2-F3_-AD-972v_7w/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/conference-room-los-angeles?adjust_creative=SSaZrUoYqTtTRfKU0Kl9DQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=SSaZrUoYqTtTRfKU0Kl9DQ",
+        "review_count": 58, "categories": [{"alias": "gastropubs", "title": "Gastropubs"},
+        {"alias": "newamerican", "title": "American (New)"}], "rating": 4.5, "coordinates":
+        {"latitude": 33.9782319, "longitude": -118.4053497}, "transactions": ["pickup",
+        "delivery"], "location": {"address1": "12181 Bluff Creek Dr", "address2":
+        null, "address3": "", "city": "Los Angeles", "zip_code": "90094", "country":
+        "US", "state": "CA", "display_address": ["12181 Bluff Creek Dr", "Los Angeles,
+        CA 90094"]}, "phone": "+13108626436", "display_phone": "(310) 862-6436", "distance":
+        895.1397393654684}, {"id": "U-jWH-Cld5YxdJQv7MvKAQ", "alias": "urban-plates-playa-vista",
+        "name": "Urban Plates", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/kL7F7ok7L_i8gbeVMmf5uA/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/urban-plates-playa-vista?adjust_creative=SSaZrUoYqTtTRfKU0Kl9DQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=SSaZrUoYqTtTRfKU0Kl9DQ",
+        "review_count": 693, "categories": [{"alias": "newamerican", "title": "American
+        (New)"}, {"alias": "salad", "title": "Salad"}, {"alias": "sandwiches", "title":
+        "Sandwiches"}], "rating": 4.0, "coordinates": {"latitude": 33.977575, "longitude":
+        -118.416553}, "transactions": ["pickup", "delivery"], "price": "$$", "location":
+        {"address1": "12746-3 W Jefferson Blvd", "address2": "Ste 3140", "address3":
+        "", "city": "Playa Vista", "zip_code": "90094", "country": "US", "state":
+        "CA", "display_address": ["12746-3 W Jefferson Blvd", "Ste 3140", "Playa Vista,
+        CA 90094"]}, "phone": "+14242567274", "display_phone": "(424) 256-7274", "distance":
+        333.70224011522026}, {"id": "q6Vzf69NaHqj5H-ywT8b7Q", "alias": "koobide-mediterranean-grill-culver-city-4",
+        "name": "Koobide Mediterranean Grill", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/ofG9a9dHjBINRzjdoIcG0g/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/koobide-mediterranean-grill-culver-city-4?adjust_creative=SSaZrUoYqTtTRfKU0Kl9DQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=SSaZrUoYqTtTRfKU0Kl9DQ",
+        "review_count": 66, "categories": [{"alias": "mediterranean", "title": "Mediterranean"},
+        {"alias": "persian", "title": "Persian/Iranian"}, {"alias": "kebab", "title":
+        "Kebab"}], "rating": 4.0, "coordinates": {"latitude": 33.986026, "longitude":
+        -118.401532}, "transactions": ["pickup", "delivery"], "location": {"address1":
+        "11800 Jefferson Blvd", "address2": "Ste A", "address3": "", "city": "Culver
+        City", "zip_code": "90230", "country": "US", "state": "CA", "display_address":
+        ["11800 Jefferson Blvd", "Ste A", "Culver City, CA 90230"]}, "phone": "+13103906800",
+        "display_phone": "(310) 390-6800", "distance": 1732.3608614169248}, {"id":
+        "SHiiQZQus20xnD-jW9oQuw", "alias": "the-ramen-joint-los-angeles-2", "name":
+        "The Ramen Joint", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/WHRRrXiJNmhYao918Jtd9Q/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/the-ramen-joint-los-angeles-2?adjust_creative=SSaZrUoYqTtTRfKU0Kl9DQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=SSaZrUoYqTtTRfKU0Kl9DQ",
+        "review_count": 1370, "categories": [{"alias": "ramen", "title": "Ramen"}],
+        "rating": 4.5, "coordinates": {"latitude": 33.9583942, "longitude": -118.3941804},
+        "transactions": ["delivery"], "price": "$$", "location": {"address1": "6220
+        W 87th St", "address2": "", "address3": "", "city": "Los Angeles", "zip_code":
+        "90045", "country": "US", "state": "CA", "display_address": ["6220 W 87th
+        St", "Los Angeles, CA 90045"]}, "phone": "+14242279328", "display_phone":
+        "(424) 227-9328", "distance": 2645.5655059041023}, {"id": "hsucekX4BmjdNxOgZmNTUg",
+        "alias": "ritrovo-playa-vista-los-angeles", "name": "Ritrovo Playa Vista",
+        "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/S8J_3w-l4uXP3PfrbtRYsg/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/ritrovo-playa-vista-los-angeles?adjust_creative=SSaZrUoYqTtTRfKU0Kl9DQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=SSaZrUoYqTtTRfKU0Kl9DQ",
+        "review_count": 160, "categories": [{"alias": "italian", "title": "Italian"},
+        {"alias": "pizza", "title": "Pizza"}], "rating": 4.0, "coordinates": {"latitude":
+        33.97369, "longitude": -118.4221}, "transactions": ["delivery"], "price":
+        "$$", "location": {"address1": "6020 Seabluff Dr", "address2": null, "address3":
+        "", "city": "Los Angeles", "zip_code": "90094", "country": "US", "state":
+        "CA", "display_address": ["6020 Seabluff Dr", "Los Angeles, CA 90094"]}, "phone":
+        "+14242899327", "display_phone": "(424) 289-9327", "distance": 713.571171875756},
+        {"id": "7Fum8b4ilhuwMr3R5pxPSg", "alias": "the-manchester-los-angeles", "name":
+        "The Manchester", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/4m6T9W9vS3vB0igTERMtjg/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/the-manchester-los-angeles?adjust_creative=SSaZrUoYqTtTRfKU0Kl9DQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=SSaZrUoYqTtTRfKU0Kl9DQ",
+        "review_count": 91, "categories": [{"alias": "cocktailbars", "title": "Cocktail
+        Bars"}, {"alias": "newamerican", "title": "American (New)"}], "rating": 4.5,
+        "coordinates": {"latitude": 33.959998, "longitude": -118.419237}, "transactions":
+        ["pickup", "delivery"], "location": {"address1": "8522 Lincoln Blvd", "address2":
+        "", "address3": null, "city": "Los Angeles", "zip_code": "90045", "country":
+        "US", "state": "CA", "display_address": ["8522 Lincoln Blvd", "Los Angeles,
+        CA 90045"]}, "phone": "+14245417097", "display_phone": "(424) 541-7097", "distance":
+        1714.7205665936604}, {"id": "KW6SuvmXZOBJSvMDhk8KUw", "alias": "casa-sanchez-los-angeles",
+        "name": "Casa Sanchez", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/L8esZ_VmOdDcM_QcCtAGgw/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/casa-sanchez-los-angeles?adjust_creative=SSaZrUoYqTtTRfKU0Kl9DQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=SSaZrUoYqTtTRfKU0Kl9DQ",
+        "review_count": 1270, "categories": [{"alias": "mexican", "title": "Mexican"}],
+        "rating": 4.0, "coordinates": {"latitude": 33.9927987, "longitude": -118.4227098},
+        "transactions": ["pickup", "restaurant_reservation", "delivery"], "price":
+        "$$", "location": {"address1": "4500 S Centinela Ave", "address2": "", "address3":
+        "", "city": "Los Angeles", "zip_code": "90066", "country": "US", "state":
+        "CA", "display_address": ["4500 S Centinela Ave", "Los Angeles, CA 90066"]},
+        "phone": "+13103979999", "display_phone": "(310) 397-9999", "distance": 2113.892831991834},
+        {"id": "uA3TautyZ7bby0w8Scwufg", "alias": "bennys-tacos-and-chicken-rotisserie-los-angeles-4",
+        "name": "Benny''s Tacos & Chicken Rotisserie", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/DvYYgTEklvMM_HMhbMX1rA/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/bennys-tacos-and-chicken-rotisserie-los-angeles-4?adjust_creative=SSaZrUoYqTtTRfKU0Kl9DQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=SSaZrUoYqTtTRfKU0Kl9DQ",
+        "review_count": 2439, "categories": [{"alias": "mexican", "title": "Mexican"},
+        {"alias": "tex-mex", "title": "Tex-Mex"}], "rating": 4.5, "coordinates": {"latitude":
+        33.95998, "longitude": -118.41685}, "transactions": ["pickup", "delivery"],
+        "price": "$", "location": {"address1": "7101 W Manchester Ave", "address2":
+        "", "address3": "", "city": "Los Angeles", "zip_code": "90045", "country":
+        "US", "state": "CA", "display_address": ["7101 W Manchester Ave", "Los Angeles,
+        CA 90045"]}, "phone": "+13106708226", "display_phone": "(310) 670-8226", "distance":
+        1675.490452221005}, {"id": "cAnHOEuT0MkiribpjnFVRg", "alias": "ayara-thai-cuisine-los-angeles",
+        "name": "Ayara Thai Cuisine", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/spbMjYNZ42NcNf6sW6mWzA/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/ayara-thai-cuisine-los-angeles?adjust_creative=SSaZrUoYqTtTRfKU0Kl9DQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=SSaZrUoYqTtTRfKU0Kl9DQ",
+        "review_count": 2189, "categories": [{"alias": "thai", "title": "Thai"}],
+        "rating": 4.0, "coordinates": {"latitude": 33.95878, "longitude": -118.39451},
+        "transactions": ["pickup", "delivery"], "price": "$$", "location": {"address1":
+        "6245 W 87th St", "address2": null, "address3": "", "city": "Los Angeles",
+        "zip_code": "90045", "country": "US", "state": "CA", "display_address": ["6245
+        W 87th St", "Los Angeles, CA 90045"]}, "phone": "+13104108848", "display_phone":
+        "(310) 410-8848", "distance": 2594.0925047744017}, {"id": "wZO-ALpCQSVPpsMxPMK_Cg",
+        "alias": "cinco-los-angeles-2", "name": "Cinco", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/lwrm8XpODrovlVuLtaY1YA/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/cinco-los-angeles-2?adjust_creative=SSaZrUoYqTtTRfKU0Kl9DQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=SSaZrUoYqTtTRfKU0Kl9DQ",
+        "review_count": 592, "categories": [{"alias": "mexican", "title": "Mexican"},
+        {"alias": "bars", "title": "Bars"}], "rating": 4.0, "coordinates": {"latitude":
+        33.960296, "longitude": -118.42056}, "transactions": ["pickup", "delivery"],
+        "price": "$$", "location": {"address1": "7241 W Manchester Ave", "address2":
+        "", "address3": "", "city": "Los Angeles", "zip_code": "90045", "country":
+        "US", "state": "CA", "display_address": ["7241 W Manchester Ave", "Los Angeles,
+        CA 90045"]}, "phone": "+13109100895", "display_phone": "(310) 910-0895", "distance":
+        1716.5646995851587}, {"id": "TzTqbkQN_A-bxW0ruPIz-g", "alias": "baja-catch-and-grill-culver-city-2",
+        "name": "Baja Catch & Grill", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/wjeIxJOpUdb3jd4cFX3Dwg/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/baja-catch-and-grill-culver-city-2?adjust_creative=SSaZrUoYqTtTRfKU0Kl9DQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=SSaZrUoYqTtTRfKU0Kl9DQ",
+        "review_count": 77, "categories": [{"alias": "seafood", "title": "Seafood"},
+        {"alias": "mexican", "title": "Mexican"}], "rating": 4.5, "coordinates": {"latitude":
+        33.9818401, "longitude": -118.4086738}, "transactions": ["pickup", "delivery"],
+        "price": "$", "location": {"address1": "12219 W Jefferson Blvd", "address2":
+        null, "address3": null, "city": "Culver City", "zip_code": "90230", "country":
+        "US", "state": "CA", "display_address": ["12219 W Jefferson Blvd", "Culver
+        City, CA 90230"]}, "phone": "+13103069058", "display_phone": "(310) 306-9058",
+        "distance": 948.490817770445}, {"id": "mhV6ajue2eUPVWMULH9Jxg", "alias": "the-bombay-frankie-company-culver-city",
+        "name": "The Bombay Frankie Company", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/oqyakXHra4a2LrOALPmZSw/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/the-bombay-frankie-company-culver-city?adjust_creative=SSaZrUoYqTtTRfKU0Kl9DQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=SSaZrUoYqTtTRfKU0Kl9DQ",
+        "review_count": 722, "categories": [{"alias": "indpak", "title": "Indian"}],
+        "rating": 4.5, "coordinates": {"latitude": 33.986645, "longitude": -118.392915},
+        "transactions": ["pickup", "delivery"], "price": "$$", "location": {"address1":
+        "6000 Sepulveda Blvd", "address2": "Ste 1601", "address3": "", "city": "Culver
+        City", "zip_code": "90230", "country": "US", "state": "CA", "display_address":
+        ["6000 Sepulveda Blvd", "Ste 1601", "Culver City, CA 90230"]}, "phone": "+13104449241",
+        "display_phone": "(310) 444-9241", "distance": 2396.9156019065094}, {"id":
+        "ZCW25em3XUNiXNT1CH1bzA", "alias": "gulp-los-angeles-5", "name": "Gulp", "image_url":
+        "https://s3-media2.fl.yelpcdn.com/bphoto/sN3Oj8n-1hi--U3-vd-zYA/o.jpg", "is_closed":
+        false, "url": "https://www.yelp.com/biz/gulp-los-angeles-5?adjust_creative=SSaZrUoYqTtTRfKU0Kl9DQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=SSaZrUoYqTtTRfKU0Kl9DQ",
+        "review_count": 196, "categories": [{"alias": "newamerican", "title": "American
+        (New)"}, {"alias": "burgers", "title": "Burgers"}, {"alias": "sportsbars",
+        "title": "Sports Bars"}], "rating": 3.5, "coordinates": {"latitude": 33.972623121843,
+        "longitude": -118.423509187836}, "transactions": ["pickup"], "price": "$$",
+        "location": {"address1": "13020 Pacific Promenade", "address2": "Ste 1", "address3":
+        "", "city": "Los Angeles", "zip_code": "90094", "country": "US", "state":
+        "CA", "display_address": ["13020 Pacific Promenade", "Ste 1", "Los Angeles,
+        CA 90094"]}, "phone": "+13104963966", "display_phone": "(310) 496-3966", "distance":
+        847.4245680859062}, {"id": "7GNQast7U3fmiVXRJoCOlg", "alias": "mendocino-farms-marina-del-rey",
+        "name": "Mendocino Farms", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/mUl7xpLm5NN13J4mErIluQ/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/mendocino-farms-marina-del-rey?adjust_creative=SSaZrUoYqTtTRfKU0Kl9DQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=SSaZrUoYqTtTRfKU0Kl9DQ",
+        "review_count": 1970, "categories": [{"alias": "sandwiches", "title": "Sandwiches"},
+        {"alias": "salad", "title": "Salad"}], "rating": 4.5, "coordinates": {"latitude":
+        33.97884396727129, "longitude": -118.4378487041164}, "transactions": ["pickup",
+        "delivery"], "price": "$$", "location": {"address1": "4724 Admiralty Way",
+        "address2": "", "address3": "", "city": "Marina Del Rey", "zip_code": "90292",
+        "country": "US", "state": "CA", "display_address": ["4724 Admiralty Way",
+        "Marina Del Rey, CA 90292"]}, "phone": "+13108222300", "display_phone": "(310)
+        822-2300", "distance": 2171.832860076495}, {"id": "JxfOcD7GPDXPk2RuylDJcQ",
+        "alias": "sustainabowl-los-angeles-4", "name": "Sustainabowl", "image_url":
+        "https://s3-media1.fl.yelpcdn.com/bphoto/yLXZnqoTGwAmAYF1ldE0mw/o.jpg", "is_closed":
+        false, "url": "https://www.yelp.com/biz/sustainabowl-los-angeles-4?adjust_creative=SSaZrUoYqTtTRfKU0Kl9DQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=SSaZrUoYqTtTRfKU0Kl9DQ",
+        "review_count": 391, "categories": [{"alias": "poke", "title": "Poke"}, {"alias":
+        "acaibowls", "title": "Acai Bowls"}, {"alias": "vegan", "title": "Vegan"}],
+        "rating": 4.5, "coordinates": {"latitude": 33.9617584, "longitude": -118.4207342},
+        "transactions": ["pickup", "delivery"], "price": "$$", "location": {"address1":
+        "8338 Lincoln Blvd", "address2": null, "address3": "", "city": "Los Angeles",
+        "zip_code": "90045", "country": "US", "state": "CA", "display_address": ["8338
+        Lincoln Blvd", "Los Angeles, CA 90045"]}, "phone": "+16618694866", "display_phone":
+        "(661) 869-4866", "distance": 1556.5194549922594}], "total": 206, "region":
+        {"center": {"longitude": -118.41476440429688, "latitude": 33.97496609286987}}}'
+  recorded_at: Wed, 18 Nov 2020 03:51:48 GMT
+recorded_with: VCR 6.0.0

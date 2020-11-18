@@ -1,0 +1,58 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.yelp.com/v3/businesses/search?limit=20&location=90094&offset=19980&term=restaurants
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Authorization:
+      - Bearer KLoofZniw4yabSzI5pn38yhcvR6G0-arFYkeGVjUBT-XieLiV6O42I11MDgRz8aZcSky0IlmsGlEKYtp58bX0Ey-ev-14SkaCD8Gz0bWHYNHD9OQRRk2UbehHZWxX3Yx
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '137'
+      Server:
+      - openresty/1.13.6.2
+      Content-Type:
+      - application/json
+      X-B3-Sampled:
+      - '0'
+      X-Zipkin-Id:
+      - 1c61fea89b836978
+      X-Routing-Service:
+      - routing-main--uswest2-779d555cf4-9zl7x; site=public_api_v3
+      X-Proxied:
+      - 10-69-129-238-uswest2bprod
+      X-Extlb:
+      - 10-69-129-238-uswest2bprod
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Wed, 18 Nov 2020 03:51:48 GMT
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-bur17565-BUR
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: '{"error": {"code": "VALIDATION_ERROR", "description": "19980 is greater
+        than the maximum of 1000", "field": "offset", "instance": 19980}}'
+  recorded_at: Wed, 18 Nov 2020 03:51:48 GMT
+recorded_with: VCR 6.0.0

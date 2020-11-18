@@ -1,0 +1,277 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.yelp.com/v3/businesses/search?limit=20&location=90094&offset=20&term=restaurants
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Authorization:
+      - Bearer KLoofZniw4yabSzI5pn38yhcvR6G0-arFYkeGVjUBT-XieLiV6O42I11MDgRz8aZcSky0IlmsGlEKYtp58bX0Ey-ev-14SkaCD8Gz0bWHYNHD9OQRRk2UbehHZWxX3Yx
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Server:
+      - openresty/1.13.6.2
+      Content-Type:
+      - application/json
+      X-Routing-Service:
+      - routing-main--uswest2-779d555cf4-27rkg; site=public_api_v3
+      Ratelimit-Remaining:
+      - '4958'
+      X-B3-Sampled:
+      - '0'
+      Ratelimit-Dailylimit:
+      - '5000'
+      X-Zipkin-Id:
+      - d04874cfafd524a4
+      Ratelimit-Resettime:
+      - '2020-11-19T00:00:00+00:00'
+      X-Proxied:
+      - 10-69-172-176-uswest2bprod
+      X-Extlb:
+      - 10-69-172-176-uswest2bprod
+      Cache-Control:
+      - max-age=0, must-revalidate, no-cache, no-store, private, no-transform
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Wed, 18 Nov 2020 03:51:48 GMT
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-bur17580-BUR
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: '{"businesses": [{"id": "lXO-2s8DFGvtZ71qDunfNQ", "alias": "the-most-valuable-playa-los-angeles",
+        "name": "The Most Valuable Playa", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/nc1RyglJ5k6iitFpmxtLTA/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/the-most-valuable-playa-los-angeles?adjust_creative=SSaZrUoYqTtTRfKU0Kl9DQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=SSaZrUoYqTtTRfKU0Kl9DQ",
+        "review_count": 91, "categories": [{"alias": "taiwanese", "title": "Taiwanese"},
+        {"alias": "asianfusion", "title": "Asian Fusion"}, {"alias": "burgers", "title":
+        "Burgers"}], "rating": 4.0, "coordinates": {"latitude": 33.96191, "longitude":
+        -118.42145}, "transactions": ["delivery", "pickup"], "price": "$$", "location":
+        {"address1": "8321 Lincoln Blvd", "address2": "", "address3": null, "city":
+        "Los Angeles", "zip_code": "90045", "country": "US", "state": "CA", "display_address":
+        ["8321 Lincoln Blvd", "Los Angeles, CA 90045"]}, "phone": "+13109100367",
+        "display_phone": "(310) 910-0367", "distance": 1577.2617773774914}, {"id":
+        "3Qw9xytSD2R3nB4oUsIQSw", "alias": "shake-shack-marina-del-rey-2", "name":
+        "Shake Shack", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/g2zsaVU-84xMlUzTCuAlRw/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/shake-shack-marina-del-rey-2?adjust_creative=SSaZrUoYqTtTRfKU0Kl9DQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=SSaZrUoYqTtTRfKU0Kl9DQ",
+        "review_count": 126, "categories": [{"alias": "burgers", "title": "Burgers"}],
+        "rating": 3.5, "coordinates": {"latitude": 33.9779015661597, "longitude":
+        -118.438142419859}, "transactions": ["delivery"], "price": "$$", "location":
+        {"address1": "4786 Admiralty Way", "address2": "", "address3": null, "city":
+        "Marina del Rey", "zip_code": "90292", "country": "US", "state": "CA", "display_address":
+        ["4786 Admiralty Way", "Marina del Rey, CA 90292"]}, "phone": "+12136183241",
+        "display_phone": "(213) 618-3241", "distance": 2180.264335707622}, {"id":
+        "JTSJ1z1bE1QSpjcMDYqbgA", "alias": "irori-sushi-marina-del-rey", "name": "Irori
+        Sushi", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/NWZH7RVfJTR738F5QZuZPA/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/irori-sushi-marina-del-rey?adjust_creative=SSaZrUoYqTtTRfKU0Kl9DQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=SSaZrUoYqTtTRfKU0Kl9DQ",
+        "review_count": 1758, "categories": [{"alias": "japanese", "title": "Japanese"},
+        {"alias": "sushi", "title": "Sushi Bars"}], "rating": 4.0, "coordinates":
+        {"latitude": 33.984648, "longitude": -118.439233}, "transactions": ["delivery",
+        "pickup"], "price": "$$", "location": {"address1": "4371 Glencoe Ave", "address2":
+        "Ste B4", "address3": "", "city": "Marina Del Rey", "zip_code": "90292", "country":
+        "US", "state": "CA", "display_address": ["4371 Glencoe Ave", "Ste B4", "Marina
+        Del Rey, CA 90292"]}, "phone": "+13108223700", "display_phone": "(310) 822-3700",
+        "distance": 2499.860456928677}, {"id": "j4JzyTsNq9K4MGiyG_BtkQ", "alias":
+        "bulle-bakery-los-angeles", "name": "Bulle Bakery", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/s_w_28P-QLoF9KFGsV16aQ/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/bulle-bakery-los-angeles?adjust_creative=SSaZrUoYqTtTRfKU0Kl9DQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=SSaZrUoYqTtTRfKU0Kl9DQ",
+        "review_count": 2, "categories": [{"alias": "bakeries", "title": "Bakeries"},
+        {"alias": "desserts", "title": "Desserts"}, {"alias": "scandinavian", "title":
+        "Scandinavian"}], "rating": 4.5, "coordinates": {"latitude": 33.9715, "longitude":
+        -118.42601}, "transactions": [], "location": {"address1": null, "address2":
+        null, "address3": "", "city": "Los Angeles", "zip_code": "90094", "country":
+        "US", "state": "CA", "display_address": ["Los Angeles, CA 90094"]}, "phone":
+        "+13102272099", "display_phone": "(310) 227-2099", "distance": 282.42426575451907},
+        {"id": "if0jac3j5mvSpdul7io-dA", "alias": "astro-pub-playa-vista", "name":
+        "Astro Pub", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/wd8UFMVQpWvEemNO0GdxzQ/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/astro-pub-playa-vista?adjust_creative=SSaZrUoYqTtTRfKU0Kl9DQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=SSaZrUoYqTtTRfKU0Kl9DQ",
+        "review_count": 74, "categories": [{"alias": "newamerican", "title": "American
+        (New)"}, {"alias": "pubs", "title": "Pubs"}], "rating": 3.5, "coordinates":
+        {"latitude": 33.97714, "longitude": -118.417584}, "transactions": ["delivery"],
+        "price": "$$", "location": {"address1": "12746 W Jefferson Blvd", "address2":
+        "", "address3": "Whole Foods", "city": "Playa Vista", "zip_code": "90094",
+        "country": "US", "state": "CA", "display_address": ["12746 W Jefferson Blvd",
+        "Whole Foods", "Playa Vista, CA 90094"]}, "phone": "+13108629900", "display_phone":
+        "(310) 862-9900", "distance": 355.0075190035741}, {"id": "o4q2P9Dj6J_HDXkQecrJZQ",
+        "alias": "tomi-sushi-los-angeles", "name": "Tomi Sushi", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/qOlAAiHEO8hTo_tXS-4E8g/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/tomi-sushi-los-angeles?adjust_creative=SSaZrUoYqTtTRfKU0Kl9DQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=SSaZrUoYqTtTRfKU0Kl9DQ",
+        "review_count": 200, "categories": [{"alias": "sushi", "title": "Sushi Bars"},
+        {"alias": "japanese", "title": "Japanese"}, {"alias": "tapasmallplates", "title":
+        "Tapas/Small Plates"}], "rating": 4.0, "coordinates": {"latitude": 33.98545,
+        "longitude": -118.42481}, "transactions": ["delivery", "pickup"], "price":
+        "$$", "location": {"address1": "12740 Culver Blvd", "address2": "Ste A", "address3":
+        "", "city": "Los Angeles", "zip_code": "90066", "country": "US", "state":
+        "CA", "display_address": ["12740 Culver Blvd", "Ste A", "Los Angeles, CA 90066"]},
+        "phone": "+13108238944", "display_phone": "(310) 823-8944", "distance": 1491.5369548007593},
+        {"id": "P2WWSFs3Zbw5ORt1Mevk-w", "alias": "jerrys-patio-cafe-and-bar-marina-del-rey",
+        "name": "Jerry''s Patio Cafe & Bar", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/3YWTe4VZCJuAtNwb147YBA/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/jerrys-patio-cafe-and-bar-marina-del-rey?adjust_creative=SSaZrUoYqTtTRfKU0Kl9DQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=SSaZrUoYqTtTRfKU0Kl9DQ",
+        "review_count": 49, "categories": [{"alias": "burgers", "title": "Burgers"},
+        {"alias": "cafes", "title": "Cafes"}, {"alias": "beerbar", "title": "Beer
+        Bar"}], "rating": 4.5, "coordinates": {"latitude": 33.9843076790147, "longitude":
+        -118.437725572476}, "transactions": ["delivery", "pickup"], "location": {"address1":
+        "13181 Mindanao Way", "address2": null, "address3": "", "city": "Marina del
+        Rey", "zip_code": "90292", "country": "US", "state": "CA", "display_address":
+        ["13181 Mindanao Way", "Marina del Rey, CA 90292"]}, "phone": "+13104377600",
+        "display_phone": "(310) 437-7600", "distance": 2387.634640576524}, {"id":
+        "5MBxxIZHnW_-DKR-RMGU-w", "alias": "sugarfish-by-sushi-nozawa-marina-del-rey",
+        "name": "SUGARFISH by sushi nozawa", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/PmJEV-q4fKlPM-AuBI2N3w/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/sugarfish-by-sushi-nozawa-marina-del-rey?adjust_creative=SSaZrUoYqTtTRfKU0Kl9DQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=SSaZrUoYqTtTRfKU0Kl9DQ",
+        "review_count": 1492, "categories": [{"alias": "japanese", "title": "Japanese"},
+        {"alias": "sushi", "title": "Sushi Bars"}], "rating": 4.0, "coordinates":
+        {"latitude": 33.9789043663204, "longitude": -118.437985205749}, "transactions":
+        [], "price": "$$$", "location": {"address1": "4720 Admiralty Way", "address2":
+        "", "address3": "", "city": "Marina Del Rey", "zip_code": "90292", "country":
+        "US", "state": "CA", "display_address": ["4720 Admiralty Way", "Marina Del
+        Rey, CA 90292"]}, "phone": "+13103066300", "display_phone": "(310) 306-6300",
+        "distance": 2185.505553763083}, {"id": "75TCWQxWu5X_W7QZMc0bVQ", "alias":
+        "tocaya-playa-vista-los-angeles-3", "name": "Tocaya - Playa Vista", "image_url":
+        "https://s3-media2.fl.yelpcdn.com/bphoto/M_lEmqdHZIcf11zC8h1vyg/o.jpg", "is_closed":
+        false, "url": "https://www.yelp.com/biz/tocaya-playa-vista-los-angeles-3?adjust_creative=SSaZrUoYqTtTRfKU0Kl9DQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=SSaZrUoYqTtTRfKU0Kl9DQ",
+        "review_count": 448, "categories": [{"alias": "tacos", "title": "Tacos"},
+        {"alias": "salad", "title": "Salad"}], "rating": 4.0, "coordinates": {"latitude":
+        33.979325, "longitude": -118.406384}, "transactions": ["delivery", "pickup"],
+        "price": "$$", "location": {"address1": "12150 Millennium Dr", "address2":
+        "Ste 101", "address3": "", "city": "Los Angeles", "zip_code": "90094", "country":
+        "US", "state": "CA", "display_address": ["12150 Millennium Dr", "Ste 101",
+        "Los Angeles, CA 90094"]}, "phone": "+14242896105", "display_phone": "(424)
+        289-6105", "distance": 914.994833908174}, {"id": "66UC2fpGPhcCHgGo_56HJQ",
+        "alias": "taj-india-palace-los-angeles", "name": "Taj India Palace", "image_url":
+        "https://s3-media3.fl.yelpcdn.com/bphoto/J37tqftLGD4Di7u64RwO_A/o.jpg", "is_closed":
+        false, "url": "https://www.yelp.com/biz/taj-india-palace-los-angeles?adjust_creative=SSaZrUoYqTtTRfKU0Kl9DQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=SSaZrUoYqTtTRfKU0Kl9DQ",
+        "review_count": 489, "categories": [{"alias": "indpak", "title": "Indian"}],
+        "rating": 4.0, "coordinates": {"latitude": 33.962156, "longitude": -118.421053},
+        "transactions": ["delivery", "pickup"], "price": "$$", "location": {"address1":
+        "8320 Lincoln Blvd", "address2": "", "address3": "", "city": "Los Angeles",
+        "zip_code": "90045", "country": "US", "state": "CA", "display_address": ["8320
+        Lincoln Blvd", "Los Angeles, CA 90045"]}, "phone": "+13103371423", "display_phone":
+        "(310) 337-1423", "distance": 1537.9450884438977}, {"id": "yDGL1V1t-Fwn9KJIVcP7GQ",
+        "alias": "lucilles-smokehouse-bar-b-que-culver-city", "name": "Lucille''s
+        Smokehouse Bar-B-Que", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/phJfxIPoNgRk6ubFNOgniA/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/lucilles-smokehouse-bar-b-que-culver-city?adjust_creative=SSaZrUoYqTtTRfKU0Kl9DQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=SSaZrUoYqTtTRfKU0Kl9DQ",
+        "review_count": 886, "categories": [{"alias": "bbq", "title": "Barbeque"},
+        {"alias": "smokehouse", "title": "Smokehouse"}, {"alias": "southern", "title":
+        "Southern"}], "rating": 3.5, "coordinates": {"latitude": 33.985354, "longitude":
+        -118.395087}, "transactions": ["delivery", "pickup"], "price": "$$", "location":
+        {"address1": "6000 Sepulveda Blvd", "address2": "", "address3": "", "city":
+        "Culver City", "zip_code": "90230", "country": "US", "state": "CA", "display_address":
+        ["6000 Sepulveda Blvd", "Culver City, CA 90230"]}, "phone": "+13103901227",
+        "display_phone": "(310) 390-1227", "distance": 2150.8562015685106}, {"id":
+        "kDMsnq59lJAjMX1baGJPEA", "alias": "kanpai-japanese-sushi-bar-and-grill-los-angeles",
+        "name": "Kanpai Japanese Sushi Bar & Grill", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/YEgdXfNJcm5NOFg9eEhi_A/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/kanpai-japanese-sushi-bar-and-grill-los-angeles?adjust_creative=SSaZrUoYqTtTRfKU0Kl9DQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=SSaZrUoYqTtTRfKU0Kl9DQ",
+        "review_count": 1440, "categories": [{"alias": "japanese", "title": "Japanese"},
+        {"alias": "sushi", "title": "Sushi Bars"}, {"alias": "bars", "title": "Bars"}],
+        "rating": 4.0, "coordinates": {"latitude": 33.96185, "longitude": -118.4214},
+        "transactions": ["delivery", "pickup"], "price": "$$$", "location": {"address1":
+        "8325 Lincoln Blvd", "address2": null, "address3": "", "city": "Los Angeles",
+        "zip_code": "90045", "country": "US", "state": "CA", "display_address": ["8325
+        Lincoln Blvd", "Los Angeles, CA 90045"]}, "phone": "+13103387223", "display_phone":
+        "(310) 338-7223", "distance": 1570.764573057876}, {"id": "l3up2TnMyR7-HyNPWsUmMg",
+        "alias": "alejos-presto-trattoria-italian-restaurant-westchester", "name":
+        "Alejos Presto Trattoria Italian Restaurant", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/tYP3a3oH0ZsVX_YbFwljrg/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/alejos-presto-trattoria-italian-restaurant-westchester?adjust_creative=SSaZrUoYqTtTRfKU0Kl9DQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=SSaZrUoYqTtTRfKU0Kl9DQ",
+        "review_count": 634, "categories": [{"alias": "italian", "title": "Italian"},
+        {"alias": "pizza", "title": "Pizza"}, {"alias": "desserts", "title": "Desserts"}],
+        "rating": 3.5, "coordinates": {"latitude": 33.9616082, "longitude": -118.4209981},
+        "transactions": ["delivery"], "price": "$$", "location": {"address1": "8343
+        Lincoln Blvd", "address2": "", "address3": "", "city": "Westchester", "zip_code":
+        "90045", "country": "US", "state": "CA", "display_address": ["8343 Lincoln
+        Blvd", "Westchester, CA 90045"]}, "phone": "+13106706677", "display_phone":
+        "(310) 670-6677", "distance": 1596.3191464222293}, {"id": "ZFRMpOK9urh3Ol1r-51BKw",
+        "alias": "sweet-fish-sushi-bar-playa-vista", "name": "Sweet Fish Sushi Bar",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/nbQCyiGQk-z_KAg4_oMZLw/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/sweet-fish-sushi-bar-playa-vista?adjust_creative=SSaZrUoYqTtTRfKU0Kl9DQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=SSaZrUoYqTtTRfKU0Kl9DQ",
+        "review_count": 344, "categories": [{"alias": "sushi", "title": "Sushi Bars"},
+        {"alias": "japanese", "title": "Japanese"}], "rating": 3.5, "coordinates":
+        {"latitude": 33.972585, "longitude": -118.422855}, "transactions": ["delivery"],
+        "price": "$$", "location": {"address1": "13020 Pacific Promenade", "address2":
+        "Ste 8", "address3": "", "city": "Playa Vista", "zip_code": "90094", "country":
+        "US", "state": "CA", "display_address": ["13020 Pacific Promenade", "Ste 8",
+        "Playa Vista, CA 90094"]}, "phone": "+14242282298", "display_phone": "(424)
+        228-2298", "distance": 791.6468427476306}, {"id": "E5Rpbu3cIqUsPQF7qRkWWQ",
+        "alias": "rodini-park-playa-vista", "name": "Rodini Park", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/AygabOosv1xiVHFHQLHClA/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/rodini-park-playa-vista?adjust_creative=SSaZrUoYqTtTRfKU0Kl9DQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=SSaZrUoYqTtTRfKU0Kl9DQ",
+        "review_count": 75, "categories": [{"alias": "greek", "title": "Greek"}, {"alias":
+        "mediterranean", "title": "Mediterranean"}, {"alias": "bakeries", "title":
+        "Bakeries"}], "rating": 4.5, "coordinates": {"latitude": 33.9782319, "longitude":
+        -118.4053497}, "transactions": ["delivery", "pickup"], "location": {"address1":
+        "12181 Bluff Creek Dr", "address2": null, "address3": "", "city": "Playa Vista",
+        "zip_code": "90094", "country": "US", "state": "CA", "display_address": ["12181
+        Bluff Creek Dr", "Playa Vista, CA 90094"]}, "phone": "+13102828500", "display_phone":
+        "(310) 282-8500", "distance": 895.1397393654684}, {"id": "M2mLuHbmDzwR8QMGqdLjrQ",
+        "alias": "truxtons-american-bistro-los-angeles", "name": "Truxton''s American
+        Bistro", "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/C_dt3PCk_oF28Tqa4xiBPA/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/truxtons-american-bistro-los-angeles?adjust_creative=SSaZrUoYqTtTRfKU0Kl9DQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=SSaZrUoYqTtTRfKU0Kl9DQ",
+        "review_count": 1437, "categories": [{"alias": "newamerican", "title": "American
+        (New)"}], "rating": 4.0, "coordinates": {"latitude": 33.959442, "longitude":
+        -118.393598}, "transactions": ["delivery", "pickup"], "price": "$$", "location":
+        {"address1": "8611 Truxton Ave", "address2": null, "address3": "", "city":
+        "Los Angeles", "zip_code": "90045", "country": "US", "state": "CA", "display_address":
+        ["8611 Truxton Ave", "Los Angeles, CA 90045"]}, "phone": "+13104178789", "display_phone":
+        "(310) 417-8789", "distance": 2605.7536072073453}, {"id": "kMmj-I4IgsF3NsNmBizIkg",
+        "alias": "the-marigold-cafe-marina-del-rey-7", "name": "The Marigold Cafe",
+        "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/hsrX5Rkdu0c7RHWQRdVZuA/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/the-marigold-cafe-marina-del-rey-7?adjust_creative=SSaZrUoYqTtTRfKU0Kl9DQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=SSaZrUoYqTtTRfKU0Kl9DQ",
+        "review_count": 11, "categories": [{"alias": "cafes", "title": "Cafes"}],
+        "rating": 4.5, "coordinates": {"latitude": 33.978606, "longitude": -118.438563},
+        "transactions": ["delivery", "pickup"], "location": {"address1": "4756 Admiralty
+        Way", "address2": "", "address3": null, "city": "Marina del Rey", "zip_code":
+        "90292", "country": "US", "state": "CA", "display_address": ["4756 Admiralty
+        Way", "Marina del Rey, CA 90292"]}, "phone": "+13108235373", "display_phone":
+        "(310) 823-5373", "distance": 2231.477159694342}, {"id": "-UuQNHb25PcBdB2YII8F4Q",
+        "alias": "submariner-los-angeles-2", "name": "Submariner", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/aoBHjmWmSr8ZAU7oMFFnYQ/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/submariner-los-angeles-2?adjust_creative=SSaZrUoYqTtTRfKU0Kl9DQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=SSaZrUoYqTtTRfKU0Kl9DQ",
+        "review_count": 248, "categories": [{"alias": "tradamerican", "title": "American
+        (Traditional)"}, {"alias": "delis", "title": "Delis"}], "rating": 4.5, "coordinates":
+        {"latitude": 33.991925, "longitude": -118.42172}, "transactions": ["delivery"],
+        "price": "$", "location": {"address1": "4562 Centinela Ave", "address2": null,
+        "address3": "", "city": "Los Angeles", "zip_code": "90066", "country": "US",
+        "state": "CA", "display_address": ["4562 Centinela Ave", "Los Angeles, CA
+        90066"]}, "phone": "+13103970243", "display_phone": "(310) 397-0243", "distance":
+        1991.8134803385988}, {"id": "yABfiMUE-PyHiQ35mYm_kg", "alias": "sakura-japanese-restaurant-los-angeles",
+        "name": "Sakura Japanese Restaurant", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/EDjrV2xEVqmTgAPe4SQH9w/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/sakura-japanese-restaurant-los-angeles?adjust_creative=SSaZrUoYqTtTRfKU0Kl9DQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=SSaZrUoYqTtTRfKU0Kl9DQ",
+        "review_count": 894, "categories": [{"alias": "japanese", "title": "Japanese"},
+        {"alias": "sushi", "title": "Sushi Bars"}, {"alias": "seafood", "title": "Seafood"}],
+        "rating": 4.0, "coordinates": {"latitude": 33.991939, "longitude": -118.422439},
+        "transactions": ["delivery"], "price": "$$", "location": {"address1": "4545
+        S Centinela Ave", "address2": "", "address3": "", "city": "Los Angeles", "zip_code":
+        "90066", "country": "US", "state": "CA", "display_address": ["4545 S Centinela
+        Ave", "Los Angeles, CA 90066"]}, "phone": "+13108227790", "display_phone":
+        "(310) 822-7790", "distance": 2015.5944055991656}, {"id": "Nio3OZYSFFYIW33wjHhTPw",
+        "alias": "sweetgreen-marina-del-rey-2", "name": "sweetgreen", "image_url":
+        "https://s3-media1.fl.yelpcdn.com/bphoto/881gOwUPL6ZX88Qd5GbPIQ/o.jpg", "is_closed":
+        false, "url": "https://www.yelp.com/biz/sweetgreen-marina-del-rey-2?adjust_creative=SSaZrUoYqTtTRfKU0Kl9DQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=SSaZrUoYqTtTRfKU0Kl9DQ",
+        "review_count": 165, "categories": [{"alias": "salad", "title": "Salad"},
+        {"alias": "vegetarian", "title": "Vegetarian"}], "rating": 3.5, "coordinates":
+        {"latitude": 33.9791293730653, "longitude": -118.438174986473}, "transactions":
+        ["delivery", "pickup"], "price": "$$", "location": {"address1": "4718 Admiralty
+        Way", "address2": "", "address3": null, "city": "Marina Del Rey", "zip_code":
+        "90292", "country": "US", "state": "CA", "display_address": ["4718 Admiralty
+        Way", "Marina Del Rey, CA 90292"]}, "phone": "+13103406880", "display_phone":
+        "(310) 340-6880", "distance": 2207.7606575178124}], "total": 206, "region":
+        {"center": {"longitude": -118.41476440429688, "latitude": 33.97496609286987}}}'
+  recorded_at: Wed, 18 Nov 2020 03:51:48 GMT
+recorded_with: VCR 6.0.0
