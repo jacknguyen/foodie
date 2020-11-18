@@ -11,7 +11,8 @@ module BusinessTest
     end
 
     test 'when the page number is 5' do
-      assert({ offset: Business.limit * 4 }, Business.send(:offset, '5'))
+      page_num = 5
+      assert({ offset: Business.limit * (page_num - 1) }, Business.send(:offset, page_num.to_s))
     end
   end
 

@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.yelp.com/v3/businesses/search?limit=20&location=90094&offset=19980&term=restaurants
+    uri: https://api.yelp.com/v3/businesses/search?categories=restaurants&limit=20&location=90094&offset=19980
     body:
       encoding: US-ASCII
       string: ''
@@ -31,21 +31,21 @@ http_interactions:
       X-B3-Sampled:
       - '0'
       X-Zipkin-Id:
-      - 1c61fea89b836978
+      - '0981339714d12930'
       X-Routing-Service:
-      - routing-main--uswest2-779d555cf4-9zl7x; site=public_api_v3
+      - routing-main--uswest2-779d555cf4-t7gm4; site=public_api_v3
       X-Proxied:
-      - 10-69-129-238-uswest2bprod
+      - 10-69-70-199-uswest2aprod
       X-Extlb:
-      - 10-69-129-238-uswest2bprod
+      - 10-69-70-199-uswest2aprod
       Accept-Ranges:
       - bytes
       Date:
-      - Wed, 18 Nov 2020 03:51:48 GMT
+      - Wed, 18 Nov 2020 04:16:26 GMT
       Via:
       - 1.1 varnish
       X-Served-By:
-      - cache-bur17565-BUR
+      - cache-bur17552-BUR
       X-Cache:
       - MISS
       X-Cache-Hits:
@@ -54,5 +54,5 @@ http_interactions:
       encoding: UTF-8
       string: '{"error": {"code": "VALIDATION_ERROR", "description": "19980 is greater
         than the maximum of 1000", "field": "offset", "instance": 19980}}'
-  recorded_at: Wed, 18 Nov 2020 03:51:48 GMT
+  recorded_at: Wed, 18 Nov 2020 04:16:26 GMT
 recorded_with: VCR 6.0.0
