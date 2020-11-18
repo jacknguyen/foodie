@@ -10,12 +10,14 @@ gem 'webpacker', '~> 4.0'
 gem 'bootsnap', '>= 1.4.2', require: false
 gem 'jsonapi-serializer', '~> 2.1.0'
 gem 'mongoid', '~> 7.1.5'
-gem 'yelp-fusion'
+gem 'yelp-fusion', '~> 1.0.1'
 
 group :development, :test do
   gem 'awesome_print', '~> 1.8.0'
   gem 'dotenv', '~> 2.7.6'
   gem 'pry-byebug', '~> 3.9.0'
+  gem 'vcr', '~> 6.0.0'
+  gem 'webmock', '~> 3.10.0'
 end
 
 group :development do
@@ -28,6 +30,8 @@ end
 
 group :test do
   gem 'capybara', '>= 2.15'
+  gem 'minitest-rails', '~> 6.0.0'
+  gem 'minitest-rails-capybara'
   gem 'selenium-webdriver'
   gem 'webdrivers'
 end
