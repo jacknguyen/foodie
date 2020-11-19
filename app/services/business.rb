@@ -22,7 +22,7 @@ class Business
     end
 
     def limit
-      20
+      50
     end
 
     # Searches for restaurants base on address or zipcode. Default search is set
@@ -35,7 +35,6 @@ class Business
     #   Business.search(zip_code: 90210, page: 2)
     def search(opts = {})
       params = {
-        categories: 'restaurants',
         limit: limit
       }.merge!(opts.except(:zip_code, :address, :page))
       location = opts[:zip_code] || opts[:address] || nil
