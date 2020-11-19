@@ -3,22 +3,11 @@ require_relative '../config/environment'
 require 'rails/test_help'
 require 'capybara/rails'
 require 'capybara/minitest'
+require 'minitest/rails'
 require 'vcr'
+require 'database_cleaner-mongoid'
 
-Capybara.default_driver = :selenium_chrome_headless
-
-class ActionDispatch::IntegrationTest
-  # Make the Capybara DSL available in all integration tests
-  include Capybara::DSL
-  # Make `assert_*` methods behave like Minitest assertions
-  include Capybara::Minitest::Assertions
-
-  # Reset sessions and driver between tests
-  teardown do
-    Capybara.reset_sessions!
-    Capybara.use_default_driver
-  end
-end
+Capybara.default_driver = :selenium_headless
 
 VCR.configure do |config|
   config.allow_http_connections_when_no_cassette = false
@@ -27,9 +16,33 @@ VCR.configure do |config|
   config.ignore_localhost = true
 end
 
+class ActionDispatch::IntegrationTest
+  include Capybara::DSL
+  include Capybara::Minitest::Assertions
+  setup do
+    ActionController::Base.allow_forgery_protection = true
+  end
+
+  teardown do
+    Capybara.reset_sessions!
+    Capybara.use_default_driver
+    ActionController::Base.allow_forgery_protection = false
+  end
+end
+
 class ActiveSupport::TestCase
+  DatabaseCleaner.strategy = :truncation
+
   # Run tests in parallel with specified workers
   parallelize(workers: :number_of_processors)
+
+  setup do
+    DatabaseCleaner.start
+  end
+
+  teardown do
+    DatabaseCleaner.clean
+  end
 
   # Add more helper methods to be used by all tests here...
   def self.test(test_name, &block)
