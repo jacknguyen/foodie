@@ -1,5 +1,4 @@
 require('bootstrap')
-import 'bootstrap/dist/css/bootstrap'
 import '../stylesheets/application'
 
 import React from 'react'
