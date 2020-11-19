@@ -9,6 +9,7 @@ gem 'webpacker', '~> 4.0'
 
 gem 'bootsnap', '>= 1.4.2', require: false
 gem 'jsonapi-serializer', '~> 2.1.0'
+gem 'jwt', '~> 2.2.2'
 gem 'mongoid', '~> 7.1.5'
 gem 'yelp-fusion', '~> 1.0.1'
 
@@ -29,9 +30,9 @@ group :development do
 end
 
 group :test do
-  gem 'capybara', '>= 2.15'
+  gem 'capybara', '~> 3.33.0'
+  gem 'database_cleaner-mongoid'
   gem 'minitest-rails', '~> 6.0.0'
-  gem 'minitest-rails-capybara'
   gem 'selenium-webdriver'
   gem 'webdrivers'
 end
