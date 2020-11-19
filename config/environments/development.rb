@@ -52,4 +52,16 @@ Rails.application.configure do
   # Use an evented file watcher to asynchronously detect changes in source code,
   # routes, locales, etc. This feature depends on the listen gem.
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
+
+  config.after_initialize do
+    # Change Mongoid log destination and/or level
+    Mongoid.logger = Logger.new(STDERR).tap do |logger|
+      logger.level = Logger::WARN
+    end
+
+    # Change driver log destination and/or level
+    Mongo::Logger.logger = Logger.new(STDERR).tap do |logger|
+      logger.level = Logger::WARN
+    end
+  end
 end
