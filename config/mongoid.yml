@@ -181,4 +181,4 @@ test:
 production:
   clients:
     default:
-      uri: "<%= ENV['ORMONGO_RS_URL'] %>"
+      uri: "<%= ENV['MONGO_URL'] %>"
